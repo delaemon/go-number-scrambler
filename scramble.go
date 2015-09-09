@@ -1,3 +1,4 @@
+// Package go-number-scrambler generate reversible integer that is scrambled using the odd and inverse.
 package scramble
 import (
 	"math/rand"
