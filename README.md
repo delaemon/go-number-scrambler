@@ -19,12 +19,12 @@ import (
 )
 
 func main() {
-    salt, inverse := GenerateSalt()
-    in = 123
-    scrambled, _ := Scrabmble(in, salt, inverse)
-    out, _ := Scrabmble(scrambled, salt, inverse)
-    if in == out {
-        // success
-    }
+	salt, inverse := scramble.GenerateSalt()
+	in := 123
+	scrambled, _ := scramble.Scrabmble(in, salt, inverse)
+	out, _ := scramble.Scrabmble(scrambled, salt, inverse)
+	if in == out {
+		// success
+	}
 }
 ```
